@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B346B9826CA551C0065D854 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B346B9726CA551C0065D854 /* ExchangeRates.swift */; };
+		9B55286226CB9EBA0025F471 /* NetworkSessions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B55286126CB9EBA0025F471 /* NetworkSessions.swift */; };
+		9B55286426CBA7EE0025F471 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B55286326CBA7EE0025F471 /* API.swift */; };
+		9B55286626CBA8000025F471 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B55286526CBA8000025F471 /* APIError.swift */; };
 		9BB5A14C26C67972002E7473 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A14B26C67972002E7473 /* AppDelegate.swift */; };
 		9BB5A14E26C67972002E7473 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A14D26C67972002E7473 /* SceneDelegate.swift */; };
 		9BB5A15026C67972002E7473 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A14F26C67972002E7473 /* ViewController.swift */; };
 		9BB5A15326C67972002E7473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB5A15126C67972002E7473 /* Main.storyboard */; };
 		9BB5A15526C67973002E7473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB5A15426C67973002E7473 /* Assets.xcassets */; };
 		9BB5A15826C67973002E7473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB5A15626C67973002E7473 /* LaunchScreen.storyboard */; };
+		9BB5A16026C6B861002E7473 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A15F26C6B861002E7473 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B346B9726CA551C0065D854 /* ExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRates.swift; sourceTree = "<group>"; };
+		9B55286126CB9EBA0025F471 /* NetworkSessions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessions.swift; sourceTree = "<group>"; };
+		9B55286326CBA7EE0025F471 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9B55286526CBA8000025F471 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		9BB5A14826C67972002E7473 /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB5A14B26C67972002E7473 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB5A14D26C67972002E7473 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,7 @@
 		9BB5A15426C67973002E7473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BB5A15726C67973002E7473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BB5A15926C67973002E7473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BB5A15F26C6B861002E7473 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B346B9626CA54F20065D854 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B346B9726CA551C0065D854 /* ExchangeRates.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B346B9926CA55780065D854 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9BB5A14B26C67972002E7473 /* AppDelegate.swift */,
+				9BB5A14D26C67972002E7473 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9B55285E26CB9E190025F471 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9BB5A15626C67973002E7473 /* LaunchScreen.storyboard */,
+				9BB5A15126C67972002E7473 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9B55285F26CB9E660025F471 /* NetworkSessions  */ = {
+			isa = PBXGroup;
+			children = (
+				9B55286126CB9EBA0025F471 /* NetworkSessions.swift */,
+				9B55286326CBA7EE0025F471 /* API.swift */,
+				9B55286526CBA8000025F471 /* APIError.swift */,
+			);
+			path = "NetworkSessions ";
+			sourceTree = "<group>";
+		};
 		9BB5A13F26C67972002E7473 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +102,13 @@
 		9BB5A14A26C67972002E7473 /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
-				9BB5A14B26C67972002E7473 /* AppDelegate.swift */,
-				9BB5A14D26C67972002E7473 /* SceneDelegate.swift */,
+				9B346B9926CA55780065D854 /* App */,
+				9B346B9626CA54F20065D854 /* Model */,
+				9B55285E26CB9E190025F471 /* View */,
 				9BB5A14F26C67972002E7473 /* ViewController.swift */,
-				9BB5A15126C67972002E7473 /* Main.storyboard */,
+				9BB5A15F26C6B861002E7473 /* TableViewCell.swift */,
 				9BB5A15426C67973002E7473 /* Assets.xcassets */,
-				9BB5A15626C67973002E7473 /* LaunchScreen.storyboard */,
+				9B55285F26CB9E660025F471 /* NetworkSessions  */,
 				9BB5A15926C67973002E7473 /* Info.plist */,
 			);
 			path = MyApp;
@@ -138,8 +185,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BB5A15026C67972002E7473 /* ViewController.swift in Sources */,
+				9BB5A16026C6B861002E7473 /* TableViewCell.swift in Sources */,
 				9BB5A14C26C67972002E7473 /* AppDelegate.swift in Sources */,
+				9B55286226CB9EBA0025F471 /* NetworkSessions.swift in Sources */,
+				9B346B9826CA551C0065D854 /* ExchangeRates.swift in Sources */,
+				9B55286626CBA8000025F471 /* APIError.swift in Sources */,
 				9BB5A14E26C67972002E7473 /* SceneDelegate.swift in Sources */,
+				9B55286426CBA7EE0025F471 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
